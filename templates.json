@@ -8,9 +8,9 @@
       "description": "A containerized version of the Controller Application",
       "categories": ["omniq"],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/omniq/templates/refs/heads/v3/sources/ca/logo.png",
+      "logo": "https://raw.githubusercontent.com/omniq-dev/templates/refs/heads/v3/sources/ca/logo.png",
       "repository": {
-        "url": "https://raw.githubusercontent.com/omniq/templates/refs/heads/v3/sources/ca/docker-compose.yml",
+        "url": "https://raw.githubusercontent.com/omniq-dev/templates/refs/heads/v3/sources/ca/docker-compose.yml",
         "stackfile": "docker-compose.yml"
       },
       "env": [
