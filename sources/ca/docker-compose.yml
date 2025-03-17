@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  controller_application:
+    image: shawn011/controller-application:${branch}
+    network_mode: host
+    restart: always
+    devices:
+      - "/dev/${device}:/dev/${device}"

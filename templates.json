@@ -2,6 +2,33 @@
   "version": "3",
   "templates": [
     {
+      "id": 1,
+      "type": 2,
+      "title": "Controller Application",
+      "description": "A containerized version of the Controller Application",
+      "categories": ["omniq"],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/omniq/templates/refs/heads/v3/sources/ca/logo.png",
+      "repository": {
+        "url": "https://raw.githubusercontent.com/omniq/templates/refs/heads/v3/sources/ca/docker-compose.yml",
+        "stackfile": "docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "branch",
+          "label": "Version",
+          "description": "What version of CA to use. Default is latest, but you can specify any supported version of CA, eg \"5.1.1.99\". for Hailo builds, you can append -hailo, eg. \"latest-hailo\" or \"5.1.1.99-hailo\".",
+          "default": "latest"
+        },
+        {
+          "name": "device",
+          "label": "Device",
+          "description": "The name of the device to pass through. Default is apex_0 for Coral, but if using hailo you should change this to \"hailo0\".",
+          "default": "apex_0"
+        }
+      ]
+    },
+    {
       "id": 88,
       "type": 1,
       "title": "Registry",
