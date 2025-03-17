@@ -22,9 +22,19 @@
         },
         {
           "name": "device",
-          "label": "Device",
-          "description": "The name of the device to pass through. Default is apex_0 for Coral, but if using hailo you should change this to \"hailo0\".",
-          "default": "apex_0"
+          "label": "Accelerator",
+          "description": "Select the type of accelerator being used.",
+          "select" : [
+            {
+              "text": "Coral AI",
+              "value": "apex_0",
+              "default": true
+            },
+            {
+              "text": "Hailo",
+              "value": "hailo0"
+            }
+          ]
         }
       ]
     },
