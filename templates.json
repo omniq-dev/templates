@@ -35,6 +35,10 @@
             {
               "text": "Hailo",
               "value": "hailo0"
+            },
+            {
+              "text": "None (testing only)",
+              "value": "null"
             }
           ]
         }
