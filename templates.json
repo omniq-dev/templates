@@ -12,7 +12,7 @@
       "logo": "https://raw.githubusercontent.com/omniq-dev/templates/refs/heads/v3/sources/ca/logo.png",
       "note": "By default, the Version is set to \"latest\", however you can modify this to specify a version, eg. 5.1.1.99. If you're targeting hailo, you should append -hailo, eg. \"latest-hailo\" or \"5.1.1.99-hailo\". If aiming for Hailo, please also be sure to change the Accelerator to Hailo in the dropdown menu. test",
       "repository": {
-        "url": "https://raw.githubusercontent.com/omniq-dev/templates/refs/heads/v3/sources/ca/docker-compose.yml",
+        "url": "https://github.com/omniq-dev/templates/tree/v3/sources/ca",
         "stackfile": "docker-compose.yml"
       },
       "env": [
