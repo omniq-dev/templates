@@ -5,6 +5,7 @@
       "id": 1,
       "type": 3,
       "title": "Controller Application",
+      "name": "controller-application",
       "description": "A containerized version of the Controller Application",
       "categories": ["omniq"],
       "platform": "linux",
