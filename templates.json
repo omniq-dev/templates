@@ -206,10 +206,10 @@
       ]
     },
     {
-      "id": 96,
+      "id": 2,
       "type": 1,
       "title": "SQL Server",
-      "description": "Microsoft SQL Server on Linux",
+      "description": "Microsoft SQL Server on Linux. Modified for OmniQ.",
       "categories": ["database"],
       "platform": "linux",
       "note": "Password needs to include at least 8 characters including uppercase, lowercase letters, base-10 digits and/or non-alphanumeric symbols.",
@@ -224,80 +224,16 @@
         },
         {
           "name": "SA_PASSWORD",
-          "label": "SA password"
-        }
-      ]
-    },
-    {
-      "id": 97,
-      "type": 1,
-      "title": "SQL Server",
-      "description": "Microsoft SQL Server Developer for Windows containers",
-      "categories": ["database"],
-      "platform": "windows",
-      "note": "Password needs to include at least 8 characters including uppercase, lowercase letters, base-10 digits and/or non-alphanumeric symbols.",
-      "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/microsoft.png",
-      "image": "microsoft/mssql-server-windows-developer:latest",
-      "ports": ["1433/tcp"],
-      "env": [
-        {
-          "name": "ACCEPT_EULA",
-          "default": "Y",
-          "preset": true
-        },
-        {
-          "name": "sa_password",
-          "label": "SA password"
-        }
-      ],
-      "volumes": [
-        {
-          "container": "C:/temp/"
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "type": 1,
-      "title": "SQL Server Express",
-      "description": "Microsoft SQL Server Express for Windows containers",
-      "categories": ["database"],
-      "platform": "windows",
-      "note": "Password needs to include at least 8 characters including uppercase, lowercase letters, base-10 digits and/or non-alphanumeric symbols.",
-      "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/microsoft.png",
-      "image": "microsoft/mssql-server-windows-express:latest",
-      "ports": ["1433/tcp"],
-      "env": [
-        {
-          "name": "ACCEPT_EULA",
-          "default": "Y",
-          "preset": true
-        },
-        {
-          "name": "sa_password",
           "label": "SA password",
           "default": "see.control"
-        }
-      ],
-      "volumes": [
+        },
         {
-          "container": "C:/temp/"
+          "name": "MSSQL_PID",
+          "label": "Version",
+          "default": "Express",
+          "preset": true
         }
       ]
-    },
-    {
-      "id": 99,
-      "type": 2,
-      "title": "Portainer Agent",
-      "description": "Manage all the resources in your Swarm cluster",
-      "note": "The agent will be deployed globally inside your cluster and available on port 9001.",
-      "categories": ["portainer"],
-      "platform": "linux",
-      "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/portainer.png",
-      "repository": {
-        "url": "https://github.com/portainer/templates",
-        "stackfile": "stacks/portainer-agent/docker-stack.yml"
-      }
     }
   ]
 }
