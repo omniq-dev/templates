@@ -257,7 +257,7 @@
       ]
     },
     {
-      "id": 98,
+      "id": 2,
       "type": 1,
       "title": "SQL Server Express",
       "description": "Microsoft SQL Server Express for Windows containers",
@@ -275,7 +275,8 @@
         },
         {
           "name": "sa_password",
-          "label": "SA password"
+          "label": "SA password",
+          "default": "see.control"
         }
       ],
       "volumes": [
